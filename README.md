@@ -27,9 +27,9 @@ Para atribuição e verificação dos valores aleatórios, criamos as funções 
 
 Atribuição dos elementos
 Com a lógica funcional já estabelecida, podemos pensar como iremos relacionar os elementos HTML e nosso código JS. Através do DOM (Document Object Model), nós podemos alterar, adicionar e excluir estilos de eventos e elementos HTML. Sendo assim, criamos nosso index.html com três elementos:
-1 - h1 somente com texto para indicar quando o WSS está inativo;
-2 - <img> contendo a imagem utilizada no WSS
-3 - <h1> contendo texto que será substituído pelo 
+1. h1 somente com texto para indicar quando o WSS está inativo;
+1. <img> contendo a imagem utilizada no WSS
+1. <h1> contendo texto que será substituído pelo 
   
  Assim criamos as classes Clock e Logo. Elas irão partir de um elemento de referência presente no DOM, que irá fazer a associação da altura e comprimento num objeto Rectangle instanciado. Para o Clock, temos previamente à chamada do Rectangle, um método para substituirmos o texto pela hora (caso contrário iria se associar a um elemento ainda inexistente na página). E para renderizarmos, através do estilo (CSS), o método irá atribuir as coordenadas X e Y do retangulo instanciado para as propriedades left e top, respectivamente.
 

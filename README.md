@@ -4,6 +4,15 @@
 
 Como parte da nossa jornada de aprendizado, o mentor William solicitou para fazer um Web Screen Saver, aplicando o conceito de Programação Orientada a Objetos e Test Driven Development.
 
+**Tecnologias e Conceitos:**
+
+* HTML
+* CSS
+* Javascript
+* Programação Orientada a Objetos (OOP)
+* Jest (Test Driven Development)
+* DOM (Document Object Model)
+
 **Descrição:**
 
 WSS é uma aplicação que, após determinado tempo de inatividade, é iniciada. Um fundo preto com dois elementos gráficos (imagem e relógio) aparecem na tela. Os dois elementos alteram suas posições a cada x segundos, respeitando os limites do ecrã e também não se sobrepondo.

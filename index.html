@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Screen Saver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simple Web Screen Saver</h1>
+    <div id="screen">
+        <img 
+        src="https://www.learningresources.com/media/catalog/product/2/0/2095-bigtimeclock_sh-4.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=&width=" 
+        alt=""
+        id="screen__img"
+        height="200"
+        width="200">
+        <h1 id="screen__clock">clock</h1>
+    </div>
+
+    <script type="module">
+        import Rectangle from "./js/Rectangle.js";
+        import ViewportManager from "./js/ViewportManager.js"
+        import Logo from "./js/Logo.js";
+        import Clock from "./js/Clock.js";
+        import UserRole from "./js/UserRole.js"
+        
+        //detect the viewport and create a VM with the width and height from above
+        const screenWidth = document.documentElement.clientWidth;
+        const screenHeigth = document.documentElement.clientHeight;
+        const viewport = new ViewportManager(screenWidth, screenHeigth);
+
+        const logo = new Logo(document.getElementById("screen__img"));
+        const clock = new Clock(document.getElementById("screen__clock"))
+
+        //refresh position after 1.8 sec
+        setInterval(() => {
+        viewport.arrange(clock.rect, logo.rect);
+        clock.render();
+        logo.render();
+        }, 1000)
+
+        //update clock
+        clock.refreshClock();
+
+        //activate and deactivate the screen saver
+        const screensaver = new UserRole(3000);
+
+    </script>
+</body>
+</html>

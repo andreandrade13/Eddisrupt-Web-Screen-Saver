@@ -1,0 +1,23 @@
+#screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+#screen__img,
+#screen__clock {
+    position: absolute;
+}
+
+#screen__clock {
+    color: blanchedalmond;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+}

@@ -8,7 +8,7 @@ Como parte da nossa jornada de aprendizado, o mentor William solicitou para faze
 
 WSS é uma aplicação que, após determinado tempo de inatividade, é iniciada. Um fundo preto com dois elementos gráficos (imagem e relógio) aparecem na tela. Os dois elementos alteram suas posições a cada x segundos, respeitando os limites do ecrã e também não se sobrepondo.
 
-![wss gif](https://github.com/andreandrade13/Web-Screen-Saver/blob/main/wss1.png)
+![wss gif](https://github.com/andreandrade13/Web-Screen-Saver/blob/main/img/wss1.png)
 
 **Breakdown do problema:**
 
@@ -19,7 +19,7 @@ Antes de partir para o “hard coding”, fazemos um exercício de abstração o
 Através da abstração/simplificação dos elementos e ecrã em retângulos, já podemos pensar em como solucionar a questão da sobreposição e também se está dentro dos limites do ecrã:
 Colisão: Tendo um vértice como ponto de referência podemos criar uma área de colisão rectângular. E como podemos fazer isso? Com o perímetro dos dois objectos temos a área de colisão. Os seus atributos serão X de um rectângulo menos a largura do outro, e y menos a altura. Se existir colisão, os rectângulos serão reposicionados.
 
-![grafico](https://github.com/andreandrade13/Web-Screen-Saver/blob/main/coordenadas.jpg)
+![grafico](https://github.com/andreandrade13/Web-Screen-Saver/blob/main/img/coordenadas.jpg)
 
 Neste ponto, já temos toda a lógica necessária para a classe Rectangle.js, que irá ser responsável pela criação dos retângulos (constructor), cálculo dos vértices TL, TR, BL e BR do objeto do construtor (setPosition Method), e detecção de possível sobreposição (colidesWith method).
 
@@ -27,7 +27,7 @@ Neste ponto, já temos toda a lógica necessária para a classe Rectangle.js, qu
 
 Faz se necessário checar se os objetos estão “dentro” dos limites do ecrã. Sendo assim, precisamos de um gerenciador de tela para cumprir esse papel. Criamos a classe ViewportManager.js, que recebe os atributos largura e altura do ecrã e cria este objeto. Para checar se o retângulo respeita os limites, o programa deve verificar se seus vértices estão dentro desse limite, entre mínimo (0) e máximo (largura e altura) (isInBoundaries method). Essa classe também será responsável por atribuir um valor aleatório* para as coordenadas x e y dos objetos (imagem e relógio), e esse valor respeita os limites inferior (0) e superior (diferença entre largura/altura do ecrá e largura/altura do retângulo), e caso haja sobreposição, estes valores serão recalculados (arrange method).
 
-![colisao](https://github.com/andreandrade13/Web-Screen-Saver/blob/main/colisao.png)
+![colisao](https://github.com/andreandrade13/Web-Screen-Saver/blob/main/img/colisao.png)
 
 Para atribuição e verificação dos valores aleatórios, criamos as funções utilitárias getRandomNumberInRange e IsNumberInRange, onde as mesmas podem ser utlizadas em qualquer parte código (reusabilidade) e torna o código mais limpo.
 

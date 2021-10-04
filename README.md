@@ -23,7 +23,7 @@ Limites: Faz se necessário checar se os objetos estão “dentro” dos limites
 
 [colisao](https://drive.google.com/file/d/1w7XHyIvioUApFQC1eDyxKfetwV7vZ3JB/view?usp=sharing)
 
-*Para atribuição e verificação dos valores aleatórios, criamos as funções utilitárias getRandomNumberInRange e IsNumberInRange, onde as mesmas podem ser utlizadas em qualquer parte código (reusabilidade) e torna o código mais limpo.
+Para atribuição e verificação dos valores aleatórios, criamos as funções utilitárias getRandomNumberInRange e IsNumberInRange, onde as mesmas podem ser utlizadas em qualquer parte código (reusabilidade) e torna o código mais limpo.
 
 Atribuição dos elementos
 Com a lógica funcional já estabelecida, podemos pensar como iremos relacionar os elementos HTML e nosso código JS. Através do DOM (Document Object Model), nós podemos alterar, adicionar e excluir estilos de eventos e elementos HTML. Sendo assim, criamos nosso index.html com três elementos:

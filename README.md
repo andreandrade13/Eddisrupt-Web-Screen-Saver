@@ -1,9 +1,11 @@
 # Web-Screen-Saver
 
 **Overview**
+
 Como parte da nossa jornada de aprendizado, o mentor William solicitou para fazer um Web Screen Saver, aplicando o conceito de Programação Orientada a Objetos e Test Driven Development.
 
 **Descrição:**
+
 WSS é uma aplicação que, após determinado tempo de inatividade, é iniciada. Um fundo preto com dois elementos gráficos (imagem e relógio) aparecem na tela. Os dois elementos alteram suas posições a cada x segundos, respeitando os limites do ecrã e também não se sobrepondo.
 
 ![wss gif](https://drive.google.com/file/d/1btMQzLmyg1vXB8LtF6kVHOoTm3TqUHjw/view?usp=sharing)

@@ -8,7 +8,7 @@ Como parte da nossa jornada de aprendizado, o mentor William solicitou para faze
 
 WSS é uma aplicação que, após determinado tempo de inatividade, é iniciada. Um fundo preto com dois elementos gráficos (imagem e relógio) aparecem na tela. Os dois elementos alteram suas posições a cada x segundos, respeitando os limites do ecrã e também não se sobrepondo.
 
-![wss gif](https://drive.google.com/file/d/1btMQzLmyg1vXB8LtF6kVHOoTm3TqUHjw/view?usp=sharing)
+![wss gif](https://github.com/andreandrade13/Web-Screen-Saver/blob/main/wss1.png)
 
 **Breakdown do problema**
 Antes de partir para o “hard coding”, fazemos um exercício de abstração onde listamos todos os pontos pertinentes que a aplicação deve possuir/cobrir. Assim, tiramos proveito de uma grande vantagem de trabalhar com OOP, que é decompor um problema complexo em componentes menores (boa prática que facilita solução de possíveis problemas).
